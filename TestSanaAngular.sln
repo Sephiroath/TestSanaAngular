@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSanaAngular", "TestSana
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSana.Core", "TestSana.Core\TestSana.Core.csproj", "{3F1AFBA8-8CE0-41DA-B827-1AAF0AF1066A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSana.Service", "TestSana.Service\TestSana.Service.csproj", "{D0C12C54-365B-4891-8C10-02A54E1DA9E2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{3F1AFBA8-8CE0-41DA-B827-1AAF0AF1066A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F1AFBA8-8CE0-41DA-B827-1AAF0AF1066A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F1AFBA8-8CE0-41DA-B827-1AAF0AF1066A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0C12C54-365B-4891-8C10-02A54E1DA9E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0C12C54-365B-4891-8C10-02A54E1DA9E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0C12C54-365B-4891-8C10-02A54E1DA9E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0C12C54-365B-4891-8C10-02A54E1DA9E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

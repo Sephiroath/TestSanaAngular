@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgxSpinnerService } from 'ngx-spinner';
+import { StorageType } from "../model/storage-type";
+import  { StorageTypes } from "../helpers/enumerators";
 
 @Component({
   selector: 'app-product-list',
@@ -9,7 +11,7 @@ import { NgxSpinnerService } from 'ngx-spinner';
 export class ProductListComponent implements OnInit {
 
   constructor(private spinner: NgxSpinnerService) { }
-  public storageOptions: string[];
+  public storageOptions: StorageType[];
   ngOnInit() {
     /** spinner starts on init */
     this.spinner.show();
@@ -22,7 +24,13 @@ export class ProductListComponent implements OnInit {
   }
 
   getStorageOptions() {
-    this.storageOptions = ['Persistent Storage', 'In-MemoryStorage', 'LocalStorage'];
+    this.storageOptions = [
+      new StorageType(StorageTypes.PersistantStorage, 'Persistent Storage'),
+      new StorageType(StorageTypes.InMemory, 'In-MemoryStorage'),
+      new StorageType(StorageTypes.LocalStorage, 'LocalStorage')
+    ];
   }
 
+
 }
+

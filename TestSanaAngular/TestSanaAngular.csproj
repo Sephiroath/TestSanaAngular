@@ -24,8 +24,18 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\src\app\helpers\enumerators.ts" />
+    <None Remove="ClientApp\src\app\model\storage-type.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\TestSana.Core\TestSana.Core.csproj" />
     <ProjectReference Include="..\TestSana.Service\TestSana.Service.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\src\app\helpers\enumerators.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\model\storage-type.ts" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

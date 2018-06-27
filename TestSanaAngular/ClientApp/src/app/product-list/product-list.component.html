@@ -1,0 +1,16 @@
+<h1>Products</h1>
+
+<p>Test created for the DEV Technical assessment.</p>
+
+<ngx-spinner
+  bdColor = "rgba(51, 51, 51, 0.8)"
+  size = "medium"
+  color = "#fff"
+  type = "ball-grid-pulse"
+></ngx-spinner>
+
+<select class="form-control form-control-lg">
+  <option *ngFor="let storageOption of storageOptions">
+    {{storageOption}}
+  </option>
+</select>
